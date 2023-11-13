@@ -2,7 +2,7 @@ let array = ["ROCK", "PAPER", "SCISSORS"];
 function game() {
   let choice; //= prompt(`${array}`).toUpperCase();
   while (!array.includes(choice)) {
-    choice = prompt(`${array}`).toUpperCase();
+    choice = prompt(`Select one: ${array}`).toUpperCase();
   }
   let computerIndex = Math.floor(Math.random() * array.length);
   let computer = array[computerIndex];
