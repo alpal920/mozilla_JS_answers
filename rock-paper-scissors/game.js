@@ -1,7 +1,7 @@
 let array = ["ROCK", "PAPER", "SCISSORS"];
 function game() {
   let choice = prompt(`${array}`).toUpperCase();
-  let computerIndex = Math.floor(Math.random() & array.length);
+  let computerIndex = Math.floor(Math.random() * array.length);
   let computer = array[computerIndex];
   if (choice === computer) {
     return `Computer selected ${computer}, you tie!`;
